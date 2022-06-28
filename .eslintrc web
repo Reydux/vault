@@ -1,0 +1,27 @@
+{
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"tsconfigRootDir": "./",
+		"project": "tsconfig.json"
+	},
+	"plugins": ["@typescript-eslint"],
+	"extends": [
+		"eslint:recommended",
+		"next/core-web-vitals",
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"plugin:react/recommended",
+		"plugin:react/jsx-runtime",
+		"plugin:prettier/recommended",
+		"prettier"
+	],
+	"rules": {
+		"one-var": ["warn", "consecutive"],
+		"curly": ["warn", "multi"],
+		"react-hooks/exhaustive-deps": "off",
+		"@typescript-eslint/no-unsafe-assignment": "off",
+		"@typescript-eslint/no-empty-function": "off",
+		"prettier/prettier": "warn"
+	},
+	"ignorePatterns": ["**/node_modules/**", "*.js"]
+}
